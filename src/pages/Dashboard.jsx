@@ -8,7 +8,7 @@ import {
 } from "../components/PrimaryButton";
 
 const hola = () => {
-    alert('Hola')
+    alert('Hola1')
 }
 
 const hola2 = () => {
