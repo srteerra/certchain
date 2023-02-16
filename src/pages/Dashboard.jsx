@@ -1,4 +1,11 @@
-import { PrimaryButton, PrimaryButton_outline } from "../components/PrimaryButton";
+import { 
+    PrimaryButton_lg_fill,
+    PrimaryButton_md_fill,
+    PrimaryButton_sm_fill,
+    PrimaryButton_lg_outline,
+    PrimaryButton_md_outline,
+    PrimaryButton_sm_outline
+} from "../components/PrimaryButton";
 
 const hola = () => {
     alert('Hola')
@@ -11,8 +18,16 @@ const hola2 = () => {
 const Dashboard = () => {
     return (
         <div>
-            <h1 className="text-3xl">dash : <PrimaryButton text="Hola" event={hola} /> <PrimaryButton_outline text="Hola2" event={hola2} /></h1>
-            <PrimaryButton text="Hola" event={hola2} />
+            <div>
+                <PrimaryButton_lg_fill text="Connect Wallet" event={hola} />
+                <PrimaryButton_md_fill text="Connect Wallet" event={hola} />
+                <PrimaryButton_sm_fill text="Connect Wallet" event={hola} />
+            </div>
+            <div>
+                <PrimaryButton_lg_outline text="Connect Wallet" event={hola2} />
+                <PrimaryButton_md_outline text="Connect Wallet" event={hola2} />
+                <PrimaryButton_sm_outline text="Connect Wallet" event={hola2} />
+            </div>
         </div>
     );
 }
