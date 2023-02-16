@@ -3,7 +3,15 @@ import logo from '.././assets/logos/logo-light.png';
 const profile = 'https://cdn-icons-png.flaticon.com/128/666/666201.png';
 const menu = 'https://cdn-icons-png.flaticon.com/512/4254/4254068.png';
 
+// Button
+import { PrimaryButton_md_fill } from './PrimaryButton';
+
 function HeaderGuess() {
+
+    function handleConnectWallet() {
+        console.log('Connect wallet');
+    }
+
     return (
         <header className='h-28 flex items-center'>
             <nav className='flex justify-between px-6 w-11/12 mx-auto'>
@@ -18,7 +26,7 @@ function HeaderGuess() {
                         ].map(([text, href]) => (
                             <li key={text} className='flex items-center hover:cursor-pointer hover:text-slate-400 transition'><a href={href}>{text}</a></li>
                         ))}
-                        <li className='hover:cursor-pointer'>Connect wallet</li>
+                        <li className='hover:cursor-pointer'><PrimaryButton_md_fill text={"Connect wallet"} event={handleConnectWallet} /></li>
                     </ul>
                 </div>
                 <div className='lg:hidden hover:cursor-pointer flex items-center'>
