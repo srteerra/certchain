@@ -30,7 +30,8 @@
 - [tailwind](https://tailwindcss.com/) - Tailwind is a CSS (Cascading Style Sheets) framework with predefined classes that you can use to build and design web pages directly in your markup. It allows you to write CSS in your HTML in the form of predefined classes.
 - [Sanity.io](https://www.sanity.io/) - Sanity is the platform for structured content that powers remarkable digital experiences.
 - [vite](https://vitejs.dev/) - Vite is a compilation tool that aims to provide a faster and more agile development experience for modern web projects.
--  [Node.js](https://nodejs.org/es/) -As an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications.
+- [Node.js](https://nodejs.org/es/) - As an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications.
+- [Infura](https://www.infura.io/) - Infura is a node provider that allows developers to connect to the Ethereum blockchain via nodes managed by Infura, saving those developers time, money and labor.
 
 
 # WorkFlow
@@ -47,6 +48,14 @@
 
 
 # Screenshots
+### Main View
+![ES - Desktop](https://user-images.githubusercontent.com/74383100/219540252-fb6bc731-3c33-45ac-aa8e-8a21470d1052.png)
+
+### Home View
+![ES - Desktop2](https://user-images.githubusercontent.com/74383100/219540276-6e87d983-393c-4e51-a2ec-ec27d6ffc03c.png)
+
+### My documents View
+![ES - Desktop3](https://user-images.githubusercontent.com/74383100/219540304-ab39673c-f071-4c95-9435-f96d1425c01e.png)
 
 
 # Authors
