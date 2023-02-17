@@ -1,3 +1,5 @@
+![primary-horizontal](https://user-images.githubusercontent.com/74383100/219541116-92c29f3f-2ead-49ab-adf8-aba170881f1f.png)
+
 # Certchain
 
 
