@@ -18,7 +18,7 @@ function HeaderGuess() {
             <nav className='flex justify-between px-6 w-11/12 mx-auto'>
                 <img src={ logo } alt="logo" className='w-[200px]' />
                 <div className="items-center hidden lg:flex">
-                    <ul className='flex items-center gap-5 text-primary font-bold'>
+                    <ul className='flex items-center gap-5 text-black font-bold'>
                         {[
                             ['Home', '/'],
                             ['What\'s Certchain?', '/'],
