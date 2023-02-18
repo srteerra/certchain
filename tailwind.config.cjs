@@ -12,6 +12,9 @@ module.exports = {
         black: "#424242",
         white: "#FFFFFF",
       },
+      animation: {
+        "bounce-slow": "bounce 2s infinite",
+      },
     },
   },
   plugins: [

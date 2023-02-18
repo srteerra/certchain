@@ -12,6 +12,7 @@ function HeaderGuess() {
         console.log('Connect wallet');
     }
 
+    // Header as a guess user
     return (
         <header className='h-28 flex items-center'>
             <nav className='flex justify-between px-6 w-11/12 mx-auto'>
@@ -37,6 +38,7 @@ function HeaderGuess() {
     );
 }
 
+// Header as a logged user
 function HeaderLogged({userName}) {
     return (
         <header className='h-28 flex items-center font-bold'>
