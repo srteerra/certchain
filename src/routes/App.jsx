@@ -4,6 +4,7 @@ import { AuthLayout } from "../containers/AuthLayout.jsx";
 import { AuthHome } from "../pages/AuthHome.jsx";
 import Home from "../pages/Home.jsx";
 import Dashboard from "../pages/Dashboard";
+import UploadFile from "../pages/UploadFile.jsx";
 
 const App = () => {
     let auth = true;
