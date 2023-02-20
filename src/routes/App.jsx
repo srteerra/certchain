@@ -5,7 +5,6 @@ import { AuthHome } from "../pages/AuthHome.jsx";
 import { MyDocuments } from "../pages/MyDocuments.jsx";
 import Home from "../pages/Home.jsx";
 import Dashboard from "../pages/Dashboard";
-import Homelogged from "../pages/Home-logged.jsx";
 
 import { useState } from 'react';
 
@@ -13,6 +12,9 @@ const App = () => {
     const ethereum = window.ethereum;
 
     let [account, setAccount] = useState(""); // State variable to set account/wallet.
+    // ! ......................................................
+    // ! heyyyyyy perrrrooooooo no se te olvide cambiar a false
+    // ! ......................................................
     let [isconnected, setIsconnected] = useState(false); // State variable to set account/wallet.
 
     // On Acc change
@@ -42,7 +44,6 @@ const App = () => {
                 <AuthLayout account={account}>
                     <Routes>
                         <Route path="/" element={<AuthHome />} />
-                        {/* <Route path="/Home" element={<Homelogged />} /> */}
                         <Route path="/documents" element={<MyDocuments />} />
                         <Route path="*" element={<h1>404: Not Found</h1>} />
                     </Routes>
