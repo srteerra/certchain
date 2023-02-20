@@ -5,7 +5,6 @@ import { AuthHome } from "../pages/AuthHome.jsx";
 import { MyDocuments } from "../pages/MyDocuments.jsx";
 import Home from "../pages/Home.jsx";
 import Dashboard from "../pages/Dashboard";
-import Homelogged from "../pages/Home-logged.jsx";
 
 import { useState } from 'react';
 
