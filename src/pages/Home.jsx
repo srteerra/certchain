@@ -6,7 +6,7 @@ import Footer from "../components/Footer.jsx";
 
 const Home = () => {
     return (
-        <div className="h-5/6 w-full">
+        <div className="h-5/6 w-full transition">
             <div className="h-4/5 flex text-black justify-center flex-col items-center ">
                 <div className="p-5 w-full md:w-1/2 text-center">
                     <p className="text-4xl md:text-5xl font-bold my-12 w-full lg:w-1/2 mx-auto">Authenticate with Blockchain</p>
