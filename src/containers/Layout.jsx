@@ -1,9 +1,9 @@
 import { HeaderGuess, HeaderLogged } from "../components/Header";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, setAccount, setIsconnected }) => {
     return (
         <div className="h-screen">
-            <HeaderGuess />
+            <HeaderGuess setAccount={setAccount} setIsconnected={setIsconnected} />
             { children }
         </div>
     );

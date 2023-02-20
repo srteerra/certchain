@@ -6,13 +6,19 @@ import { MyDocuments } from "../pages/MyDocuments.jsx";
 import Home from "../pages/Home.jsx";
 import Dashboard from "../pages/Dashboard";
 
+import { useState } from 'react';
+
 const App = () => {
-    let auth = false;
-    if (auth) { 
+    let auth = true;
+
+    let [account, setAccount] = useState(""); // State variable to set account/wallet.
+    let [isconnected, setIsconnected] = useState(false); // State variable to set account/wallet.
+
+    if (!isconnected) { 
         // Not authenticated
         return (
             <BrowserRouter>
-                <Layout>
+                <Layout setAccount={setAccount} setIsconnected={setIsconnected}>
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/dashboard" element={<Dashboard />} />
@@ -25,7 +31,7 @@ const App = () => {
         // Authenticated
         return (
             <BrowserRouter>
-                <AuthLayout>
+                <AuthLayout account={account}>
                     <Routes>
                         <Route path="/" element={<AuthHome />} />
                         <Route path="/documents" element={<MyDocuments />} />

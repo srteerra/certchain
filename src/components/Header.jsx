@@ -2,14 +2,23 @@
 import logo from '.././assets/logos/logo-light.png';
 const profile = 'https://cdn-icons-png.flaticon.com/128/666/666201.png';
 const menu = 'https://cdn-icons-png.flaticon.com/512/4254/4254068.png';
+// require("dotenv").config();
+
+import Web3 from 'web3';
+import { abi, networks } from "../../build/contracts/Certchain.json";
+
+const web3 = new Web3(Web3.givenProvider || "http://localhost:7545");
+const certchain = new web3.eth.Contract(abi, networks[0]);
 
 // Button
 import { PrimaryButton_md_fill } from './PrimaryButton';
 
-function HeaderGuess() {
+function HeaderGuess({ setAccount, setIsconnected}) {
 
-    function handleConnectWallet() {
-        console.log('Connect wallet');
+    const handleConnectWallet = async () => {
+        const accounts = await web3.eth.requestAccounts();
+        setAccount(accounts[0]);
+        setIsconnected(true);
     }
 
     // Header as a guess user
@@ -39,17 +48,17 @@ function HeaderGuess() {
 }
 
 // Header as a logged user
-function HeaderLogged({userName}) {
+function HeaderLogged({account}) {
     return (
         <header className='h-28 flex items-center font-bold'>
             <nav className='flex justify-between px-6 w-11/12 mx-auto'>
                 <div className='flex items-center'>
-                    <p>👋 Welcome, {userName || 'user'}!</p>
+                    <p>👋 Welcome, {account || 'user'}!</p>
                 </div>
                 <div>
                     <div className='flex gap-5 items-center'>
                         <div className='w-[10px] h-[10px] rounded-full bg-informative'></div>
-                        <p>{userName || "user"}</p>
+                        <p>{account || "user"}</p>
                         <img className='w-[50px]' src={profile} alt="profile" />
                     </div>
                 </div>
