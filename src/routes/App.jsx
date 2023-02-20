@@ -9,10 +9,17 @@ import Dashboard from "../pages/Dashboard";
 import { useState } from 'react';
 
 const App = () => {
-    let auth = true;
+    const ethereum = window.ethereum;
 
     let [account, setAccount] = useState(""); // State variable to set account/wallet.
     let [isconnected, setIsconnected] = useState(false); // State variable to set account/wallet.
+
+    // On Acc change
+    ethereum.on("accountsChanged", async function (accounts) {
+        if (isconnected) {
+            window.location.reload();
+        }
+    });
 
     if (!isconnected) { 
         // Not authenticated
