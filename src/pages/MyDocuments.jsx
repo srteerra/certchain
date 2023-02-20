@@ -1,7 +1,10 @@
+import { TitleNav } from "../components/TitleNav";
+
+
 const MyDocuments = () => {
     return (
         <div>
-            <h1>Documents</h1>
+            <TitleNav title={"Documents"}></TitleNav>
         </div>
     );
 }

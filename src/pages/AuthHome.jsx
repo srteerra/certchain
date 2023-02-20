@@ -1,10 +1,11 @@
+
+import { TitleNav } from "../components/TitleNav.jsx";
+
 const AuthHome = () => {
     return (
-        <div>
-            <h1>
-                Hello
-            </h1>
-        </div>
+    <div>
+        <TitleNav title={"Home"}></TitleNav>
+    </div>
     );
 }
 
