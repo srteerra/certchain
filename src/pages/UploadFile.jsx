@@ -49,4 +49,4 @@ function UploadFile() {
     </div>
   );
 }
-export default UploadFile
+export default UploadFile;

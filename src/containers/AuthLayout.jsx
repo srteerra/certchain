@@ -3,10 +3,14 @@ import { SideNav } from "../components/SideNav.jsx";
 
 const AuthLayout = ({children}) => {
     return (
-        <div className="h-screen">
-            <HeaderLogged />
-            <SideNav />
-            {children}
+        <div className="h-screen bg-primary flex flex-col sm:flex-row">
+            <div className="w-full sm:w-[100px] sm:max-w-[100px] order-last sm:order-first flex justify-center sm:py-10">
+                <SideNav />
+            </div>
+            <div className="w-full h-screen bg-white rounded-b-[40px] sm:rounded-br-none sm:rounded-l-[40px] p-2">
+                <HeaderLogged userName="Carlos" />
+                {children}
+            </div>
         </div>
     );
 }
