@@ -15,7 +15,7 @@ const App = () => {
     // ! ......................................................
     // ! heyyyyyy perrrrooooooo no se te olvide cambiar a false
     // ! ......................................................
-    let [isconnected, setIsconnected] = useState(false); // State variable to set account/wallet.
+    let [isconnected, setIsconnected] = useState(true); // State variable to set account/wallet.
 
     // On Acc change
     ethereum.on("accountsChanged", async function (accounts) {
