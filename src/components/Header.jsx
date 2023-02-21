@@ -53,12 +53,12 @@ function HeaderLogged({account}) {
         <header className='h-28 flex items-center font-bold'>
             <nav className='flex justify-between px-6 w-11/12 mx-auto'>
                 <div className='flex items-center'>
-                    <p>👋 Welcome, {account || 'user'}!</p>
+                    <p>👋 Welcome, { 'user'}!</p>
                 </div>
                 <div>
                     <div className='flex gap-5 items-center'>
                         <div className='w-[10px] h-[10px] rounded-full bg-informative'></div>
-                        <p>{account || "user"}</p>
+                        <p>{ "user"}</p>
                         <img className='w-[50px]' src={profile} alt="profile" />
                     </div>
                 </div>

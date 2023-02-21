@@ -4,6 +4,7 @@ import { AuthLayout } from "../containers/AuthLayout.jsx";
 import { AuthHome } from "../pages/AuthHome.jsx";
 import { MyDocuments } from "../pages/MyDocuments.jsx";
 import Home from "../pages/Home.jsx";
+import UploadFile from "../pages/UploadFile.jsx";
 import Dashboard from "../pages/Dashboard";
 
 import { useState } from 'react';
@@ -32,6 +33,7 @@ const App = () => {
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/dashboard" element={<Dashboard />} />
+                        <Route path="/upload" element={<UploadFile />} />
                         <Route path="*" element={<h1>404: Not Found</h1>} />
                     </Routes>
                 </Layout>
