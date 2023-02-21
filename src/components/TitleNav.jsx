@@ -12,7 +12,7 @@ const TitleNav = ({title}) => {
 
             <div className="flex items-center gap-5">
                 <div className="py-2 px-3 border-2 border-black rounded-full sm:text-sm flex items-center gap-3 overflow-hidden">
-                    <button><FontAwesomeIcon icon="fa-solid fa-magnifying-glass" /></button>
+                    <button><FontAwesomeIcon icon="fa-regular fa-magnifying-glass" /></button>
                     <input type="text" placeholder="Search by File ID..." className="focus:outline-none w-full" />
                 </div>  
                 <button className="flex items-center px-8 py-2 text-sm bg-primary text-white rounded-full hover:opacity-90 transition duration-200 ease-in-out">
