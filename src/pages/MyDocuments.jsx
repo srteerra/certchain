@@ -4,7 +4,7 @@ import { TitleNav } from "../components/TitleNav";
 const MyDocuments = () => {
     return (
         <div>
-            <TitleNav title={"Documents"}></TitleNav>
+            <TitleNav title={"My Documents"}></TitleNav>
         </div>
     );
 }
