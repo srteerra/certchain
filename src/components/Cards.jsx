@@ -5,12 +5,12 @@ function CardUpload({title, subTitle}) {
     <div className="flex items-end bg-yellow-200 rounded-3xl w-full h-full">
         <div className='flex justify-between w-10/12 mx-auto py-6'>
             <div className=''>
-                <h2 className='font-bold'>{title}</h2>
-                <p className='text-[10px]'>{subTitle}</p>
+                <h1 className='font-bold'>{title}</h1>
+                <p className=''>{subTitle}</p>
             </div>
             
             <div className='flex items-center'>
-                <div className='bg-white rounded-xl px-3 py-3'>
+                <div className='bg-white rounded-xl p-3'>
                     <FontAwesomeIcon icon="fa-solid fa-arrow-up-from-bracket" />
                 </div>
             </div>
@@ -29,7 +29,7 @@ function CardOrganization({title, subTitle}){
                 </div>
 
                 <div className='flex items-center'>
-                    <div className='bg-white rounded-xl px-3 py-3'>
+                    <div className='bg-white rounded-xl p-3'>
                         <FontAwesomeIcon icon="fa-solid fa-building-columns" />
                     </div>
                 </div>
@@ -48,8 +48,8 @@ function CardDocuments({title, subTitle}){
                 </div>
 
                 <div className='flex items-center'>
-                    <div className='bg-white rounded-xl px-3 py-3'>
-                        <FontAwesomeIcon icon="fa-regular fa-file" />
+                    <div className='bg-white rounded-xl p-3'>
+                        <FontAwesomeIcon icon="fa-solid fa-file" />
                     </div>
                 </div>
             </div>
@@ -67,7 +67,7 @@ function CardPlan({title, subTitle}){
                     </div>
 
                     <div className='flex items-center'>
-                    <div className='bg-white rounded-xl px-3 py-3'>
+                    <div className='bg-white rounded-xl p-3'>
                         <FontAwesomeIcon icon="fa-solid fa-layer-group" />
                     </div>
                 </div>
