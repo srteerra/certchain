@@ -5,7 +5,7 @@ function CardUpload({title, subTitle}) {
     <div className="flex items-end bg-yellow-200 rounded-3xl w-full h-full">
         <div className='flex justify-between w-10/12 mx-auto py-6'>
             <div className=''>
-                <h1 className='font-bold'>{title}</h1>
+                <h2 className='font-bold'>{title}</h2>
                 <p className=''>{subTitle}</p>
             </div>
             
