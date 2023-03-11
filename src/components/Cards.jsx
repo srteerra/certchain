@@ -77,9 +77,21 @@ function CardPlan({title, subTitle}){
 
 }
 
+function DocumentCard({document}) {
+    return(
+        <div className='bg-slate-200 w-full h-full flex items-end'>
+            <div className='text-start w-5/6 mx-auto'>
+                <h1>{ document.title }</h1>
+                <p>{ document.text }</p>
+            </div>
+        </div>
+    )
+}
+
 export {
     CardUpload, 
     CardOrganization, 
     CardDocuments,
-    CardPlan
+    CardPlan,
+    DocumentCard
 };

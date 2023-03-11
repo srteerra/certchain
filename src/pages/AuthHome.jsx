@@ -21,7 +21,7 @@ const AuthHome = () => {
             </div>
             {/* container secondary-cards */}
             <div className="col-span-1">
-
+                
             </div>
         </div>
     </div>

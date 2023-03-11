@@ -25,7 +25,7 @@ const App = () => {
         }
     });
 
-    if (!isconnected) { 
+    if (isconnected) { 
         // Not authenticated
         return (
             <BrowserRouter>
