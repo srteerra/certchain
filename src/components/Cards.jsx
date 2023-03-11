@@ -3,8 +3,11 @@ import {
     ArrowUpOnSquareIcon,
     BuildingLibraryIcon,
     DocumentDuplicateIcon,
-    Square3Stack3DIcon
+    Square3Stack3DIcon,
+    Cog6ToothIcon,
+    DocumentIcon
 } from '@heroicons/react/24/outline';
+import { PrimaryButton_md_fill } from "../components/PrimaryButton.jsx";
 
 function CardUpload({title, subTitle}) {
     return(
@@ -94,10 +97,43 @@ function DocumentCard({document}) {
     )
 }
 
+function DarkCardUpload (){
+    return(
+        <div className="overflow-hidden bg-black max-[400px]:w-full w-4/5 sm:w-full lg:w-2/3 mx-auto  rounded-[50px] p-10 text-white relative">
+            <div className="absolute">
+                <h2 className="font-bold my-2">Upload your <br /> first file</h2>
+                <p>On Certchain</p>
+                <div className="my-5">
+                    <PrimaryButton_md_fill text="Learn how" />
+                </div>
+            </div>
+            <DocumentIcon className="h-52 w-52 rotate-[20deg] translate-x-full translate-y-24"/>
+        </div>
+    )
+}
+
+function DarkCardConfig (){
+    return(
+        <div className="overflow-hidden bg-black max-[400px]:w-full w-4/5 sm:w-full lg:w-2/3 mx-auto rounded-[50px] p-10 text-white relative">
+            <div className="absolute">
+                <h2 className="font-bold my-2">Configure your  <br /> profile</h2>
+                <p>On Certchain</p>
+                <div className="my-5">
+                    <PrimaryButton_md_fill text="Learn how" />
+                </div>
+            </div>
+            <Cog6ToothIcon className="h-52 w-52 translate-x-full translate-y-24"/>
+        </div>
+    )
+}
+
+
 export {
     CardUpload, 
     CardOrganization, 
     CardDocuments,
     CardPlan,
-    DocumentCard
+    DocumentCard,
+    DarkCardUpload,
+    DarkCardConfig
 };

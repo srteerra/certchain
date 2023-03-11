@@ -7,7 +7,7 @@ const AuthLayout = ({children, account}) => {
             <div className="w-full sm:w-[100px] sm:max-w-[100px] order-last sm:order-first flex justify-center sm:py-10">
                 <SideNav />
             </div>
-            <div className="w-full h-screen bg-white rounded-b-[40px] sm:rounded-br-none sm:rounded-l-[40px] p-2">
+            <div className="w-full overflow-scroll h-screen bg-white rounded-b-[40px] sm:rounded-br-none sm:rounded-l-[40px] p-2">
                 <HeaderLogged account={account} />
                 {children}
             </div>
