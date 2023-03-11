@@ -1,8 +1,14 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Zoom } from "react-awesome-reveal";
+import { 
+    ArrowUpOnSquareIcon,
+    BuildingLibraryIcon,
+    DocumentDuplicateIcon,
+    Square3Stack3DIcon
+} from '@heroicons/react/24/outline';
 
 function CardUpload({title, subTitle}) {
     return(
-    <div className="flex items-end bg-yellow-200 rounded-3xl w-full h-full">
+    <Zoom className="flex items-end bg-yellow-200 rounded-3xl w-full h-full">
         <div className='flex justify-between w-10/12 mx-auto py-6'>
             <div className=''>
                 <h2 className='font-bold'>{title}</h2>
@@ -11,17 +17,17 @@ function CardUpload({title, subTitle}) {
             
             <div className='flex items-center'>
                 <div className='bg-white rounded-xl p-3'>
-                    <FontAwesomeIcon icon="fa-solid fa-arrow-up-from-bracket" />
+                    <ArrowUpOnSquareIcon className='h-6 w-6'/>
                 </div>
             </div>
         </div>
-    </div>
+    </Zoom>
     );
 }
 
 function CardOrganization({title, subTitle}){
     return(
-        <div className="flex items-end bg-orange-200 rounded-3xl w-full h-full">
+        <Zoom delay={100} className="flex items-end bg-orange-200 rounded-3xl w-full h-full">
             <div className='flex justify-between w-10/12 mx-auto py-6'>
                 <div className=''>
                     <h2 className='font-bold'>{title}</h2>
@@ -30,17 +36,17 @@ function CardOrganization({title, subTitle}){
 
                 <div className='flex items-center'>
                     <div className='bg-white rounded-xl p-3'>
-                        <FontAwesomeIcon icon="fa-solid fa-building-columns" />
+                        <BuildingLibraryIcon className='h-6 w-6'/>
                     </div>
                 </div>
             </div>
-        </div>
+        </Zoom>
     );
 }
 
 function CardDocuments({title, subTitle}){
     return(
-        <div className="flex items-end bg-cyan-300 rounded-3xl w-full h-full">
+        <Zoom delay={200} className="flex items-end bg-cyan-300 rounded-3xl w-full h-full">
             <div className='flex justify-between w-10/12 mx-auto py-6'>
                 <div className=''>
                     <h2 className='font-bold'>{title}</h2>
@@ -49,17 +55,17 @@ function CardDocuments({title, subTitle}){
 
                 <div className='flex items-center'>
                     <div className='bg-white rounded-xl p-3'>
-                        <FontAwesomeIcon icon="fa-solid fa-file" />
+                        <DocumentDuplicateIcon className='h-6 w-6'/>
                     </div>
                 </div>
             </div>
-        </div>
+        </Zoom>
     );
 }
 
 function CardPlan({title, subTitle}){
     return(
-        <div className="flex items-end bg-yellow-200 rounded-3xl w-full h-full">
+        <Zoom delay={300} className="flex items-end bg-yellow-200 rounded-3xl w-full h-full">
             <div className='flex justify-between w-10/12 mx-auto py-6'>
                 <div className=''>
                     <h2 className='font-bold'>{title}</h2>
@@ -68,11 +74,11 @@ function CardPlan({title, subTitle}){
 
                     <div className='flex items-center'>
                     <div className='bg-white rounded-xl p-3'>
-                        <FontAwesomeIcon icon="fa-solid fa-layer-group" />
+                        <Square3Stack3DIcon className='h-6 w-6'/>
                     </div>
                 </div>
             </div>
-    </div>
+    </Zoom>
     );
 
 }
