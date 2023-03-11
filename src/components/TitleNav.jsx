@@ -7,11 +7,11 @@ import { PlusCircleIcon } from '@heroicons/react/24/solid';
 
 const TitleNav = ({title}) => {
     return(
-        <div className='h-25 flex flex-col md:flex-row items-center justify-between px-20'>
+        <div className='h-25 flex flex-col md:flex-row items-center justify-between px-5 sm:px-20'>
 
             {/* // * New file button appears when screen is md */}
 
-            <div className="flex justify-between items-center text-2xl w-full sm:w-auto gap-3 my-5">
+            <div className="flex justify-center items-center text-2xl w-full sm:w-auto gap-3 my-5">
                 <div className='flex items-center gap-2'>
                     <ArrowLeftCircleIcon className="h-8 w-8"/>
                     <p>{title}</p>

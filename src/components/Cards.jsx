@@ -15,7 +15,7 @@ function CardUpload({title, subTitle}) {
         <div className='flex justify-between w-10/12 mx-auto py-6'>
             <div className=''>
                 <h2 className='font-bold'>{title}</h2>
-                <p className=''>{subTitle}</p>
+                <p>{subTitle}</p>
             </div>
             
             <div className='flex items-center'>
@@ -34,7 +34,7 @@ function CardOrganization({title, subTitle}){
             <div className='flex justify-between w-10/12 mx-auto py-6'>
                 <div className=''>
                     <h2 className='font-bold'>{title}</h2>
-                    <p className='text-[10px]'>{subTitle}</p>
+                    <p>{subTitle}</p>
                 </div>
 
                 <div className='flex items-center'>
@@ -53,7 +53,7 @@ function CardDocuments({title, subTitle}){
             <div className='flex justify-between w-10/12 mx-auto py-6'>
                 <div className=''>
                     <h2 className='font-bold'>{title}</h2>
-                    <p className='text-[10px]'>{subTitle}</p>
+                    <p>{subTitle}</p>
                 </div>
 
                 <div className='flex items-center'>
@@ -72,7 +72,7 @@ function CardPlan({title, subTitle}){
             <div className='flex justify-between w-10/12 mx-auto py-6'>
                 <div className=''>
                     <h2 className='font-bold'>{title}</h2>
-                    <p className='text-[10px]'>{subTitle}</p>
+                    <p>{subTitle}</p>
                     </div>
 
                     <div className='flex items-center'>
@@ -81,7 +81,7 @@ function CardPlan({title, subTitle}){
                     </div>
                 </div>
             </div>
-    </Zoom>
+        </Zoom>
     );
 
 }

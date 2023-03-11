@@ -2,8 +2,8 @@
 import logo from '.././assets/logos/logo-light.png';
 const profile = 'https://cdn-icons-png.flaticon.com/128/666/666201.png';
 const menu = 'https://cdn-icons-png.flaticon.com/512/4254/4254068.png';
+import { UserIcon } from '@heroicons/react/24/solid';
 // require("dotenv").config();
-
 import Web3 from 'web3';
 import { abi, networks } from "../../build/contracts/Certchain.json";
 
@@ -57,9 +57,11 @@ function HeaderLogged({account}) {
                 </div>
                 <div>
                     <div className='flex gap-5 items-center'>
-                        <div className='w-[10px] h-[10px] rounded-full bg-informative'></div>
-                        <p>{ "user"}</p>
-                        <img className='w-[50px]' src={profile} alt="profile" />
+                        <div className='hidden min-[500px]:flex items-center gap-2'>
+                            <div className='w-[10px] h-[10px] rounded-full bg-informative'></div>
+                            <p>{ "user"}</p>
+                        </div>
+                        <UserIcon className='h-12 w-12' />
                     </div>
                 </div>
             </nav>
