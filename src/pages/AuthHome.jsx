@@ -7,7 +7,6 @@ import {
     DarkCardUpload,
     DarkCardConfig
 } from "../components/Cards.jsx";
-import { Zoom } from "react-awesome-reveal";
 
 const AuthHome = () => {
     return (
@@ -25,8 +24,8 @@ const AuthHome = () => {
             </div>
             {/* container secondary-cards */} 
             <div className="col-span-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 my-20 sm:my-10 lg:my-0 px-10 lg:px-0 gap-5">
-                <Zoom delay={100}><DarkCardUpload /></Zoom>
-               <Zoom delay={100}><DarkCardConfig /></Zoom> 
+                <DarkCardUpload />
+                <DarkCardConfig />
             </div>
         </div>
     </div>
