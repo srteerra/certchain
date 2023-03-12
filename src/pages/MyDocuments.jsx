@@ -1,29 +1,15 @@
 import { TitleNav } from "../components/TitleNav";
-import { DocumentCard } from "../components/Cards.jsx"
+import { DocumentCard, AddDocument } from "../components/Cards.jsx"
 
 const MyDocuments = () => {
-    const array = [
-        {
-            id: 1,
-            title: "hello",
-            text:"perro perro"
-        },
-        {
-            id: 2,
-            title: "hello",
-            text:"perro perro"
-        }
-    ];
-    
-    const list = array.map((doc) => {
-        <DocumentCard document={doc} key={doc.id} />
-    });
-
     return (
         <div>
             <TitleNav title={"My Documents"}></TitleNav>
-            <div className="grid grid-cols-6">
-                { list }
+            <div className="mt-5 grid grid-cols-2 xl:grid-cols-4 2xl:grid-cols-6 gap-5 px-5 sm:px-20">
+                <AddDocument />
+                <DocumentCard title={"GEN 2021"} />
+                <DocumentCard title={"GEN 2022"} />
+                {/* { documentList } */}
             </div>
         </div>
     );

@@ -14,7 +14,7 @@ const TitleNav = ({title}) => {
             <div className="flex justify-center items-center text-2xl w-full sm:w-auto gap-3 my-5">
                 <div className='flex items-center gap-2'>
                     <ArrowLeftCircleIcon className="h-8 w-8"/>
-                    <p>{title}</p>
+                    <h1 className='font-bold'>{title}</h1>
                 </div>
                 <div className='flex md:hidden'>
                     <button className="flex items-center px-8 py-2 text-sm bg-primary text-white rounded-full hover:opacity-90 transition duration-200 ease-in-out">

@@ -5,7 +5,8 @@ import {
     DocumentDuplicateIcon,
     Square3Stack3DIcon,
     Cog6ToothIcon,
-    DocumentIcon
+    DocumentIcon,
+    PlusCircleIcon
 } from '@heroicons/react/24/outline';
 import { PrimaryButton_md_fill } from "../components/PrimaryButton.jsx";
 
@@ -86,15 +87,24 @@ function CardPlan({title, subTitle}){
 
 }
 
-function DocumentCard({document}) {
+function DocumentCard({title}) {
     return(
-        <div className='bg-slate-200 w-full h-full flex items-end hover:opacity-80 hover:cursor-pointer'>
+        <div className='bg-yellow-200 w-full h-[250px] flex items-end hover:opacity-80 hover:cursor-pointer rounded-[25px] p-5'>
             <div className='text-start w-5/6 mx-auto'>
-                <h1>{ document.title }</h1>
-                <p>{ document.text }</p>
+                <h1 className="font-bold">{ title }</h1>
+                <p>12 documents</p>
             </div>
         </div>
-    )
+    );
+}
+
+function AddDocument() {
+    return(
+        <div className='bg-slate-200 w-full h-[250px] flex flex-col text-center justify-center items-center hover:opacity-80 hover:cursor-pointer rounded-[25px] p-5'>
+            <PlusCircleIcon className='h-16 w-16 mb-5'/>
+            <p>Create a new <br /> collection</p>
+        </div>
+    );
 }
 
 function DarkCardUpload (){
@@ -109,7 +119,7 @@ function DarkCardUpload (){
             </div>
             <DocumentIcon className="h-52 w-52 rotate-[20deg] translate-x-full translate-y-24"/>
         </div>
-    )
+    );
 }
 
 function DarkCardConfig (){
@@ -124,7 +134,7 @@ function DarkCardConfig (){
             </div>
             <Cog6ToothIcon className="h-52 w-52 translate-x-full translate-y-24"/>
         </div>
-    )
+    );
 }
 
 
@@ -135,5 +145,6 @@ export {
     CardPlan,
     DocumentCard,
     DarkCardUpload,
-    DarkCardConfig
+    DarkCardConfig,
+    AddDocument
 };
