@@ -1,7 +1,7 @@
 import { TitleNav } from "../components/TitleNav";
 import { DocumentCard, AddDocument } from "../components/Cards.jsx"
-
 const MyDocuments = () => {
+
     return (
         <div>
             <TitleNav title={"My Documents"}></TitleNav>

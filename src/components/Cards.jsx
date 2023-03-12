@@ -1,4 +1,6 @@
 import { Zoom } from "react-awesome-reveal";
+import { useState } from 'react';
+import {DocumentsModal} from "../containers/Modal.jsx";
 import { 
     ArrowUpOnSquareIcon,
     BuildingLibraryIcon,
@@ -88,11 +90,16 @@ function CardPlan({title, subTitle}){
 }
 
 function DocumentCard({title}) {
+    const [isOpen, setIsOpen] = useState(false)
+    function handleClick(){
+        setIsOpen(true)
+    }
     return(
-        <div className='bg-yellow-200 w-full h-[250px] flex items-end hover:opacity-80 hover:cursor-pointer rounded-[25px] p-5'>
+        <div onClick={() => handleClick()} className='bg-yellow-200 w-full h-[250px] flex items-end hover:opacity-80 hover:cursor-pointer rounded-[25px] p-5'>
             <div className='text-start w-5/6 mx-auto'>
                 <h1 className="font-bold">{ title }</h1>
                 <p>12 documents</p>
+                <DocumentsModal modalOpen={isOpen} setModalOpen={setIsOpen} title={ title } />
             </div>
         </div>
     );
