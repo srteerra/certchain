@@ -21,7 +21,12 @@ const SideNav = () => {
         setMenu(!menu);
     }
     // Active class for nav links
-        const linkClass = ({ isActive }) => (isActive ? "opacity-100" : 'opacity-50');
+    const linkClass = ({ isActive }) => (isActive ? "opacity-100" : 'opacity-50');
+
+    const reload = () => {
+        window.location.reload()
+    }
+
     return ( 
         <nav className='flex z-10 sm:flex-col max-[540px]:justify-center justify-between text-white max-[540px]:w-full w-10/12 sm:w-full py-6 sm:py-14 text-2xl relative'>
             <div>
@@ -40,7 +45,7 @@ const SideNav = () => {
                     <ul className='max-[540px]:hidden flex sm:flex-col gap-10'>
                         <li><NavLink className={linkClass} to="/l"><PaperAirplaneIcon className='h-8 w-8'/></NavLink></li>
                         <li><NavLink className={linkClass} to="/b"><Cog6ToothIcon className='h-8 w-8'/></NavLink></li>
-                        <li><NavLink to="#"><ArrowLeftOnRectangleIcon className='h-8 w-8'/></NavLink></li>
+                        <li onClick={reload}><NavLink to="#"><ArrowLeftOnRectangleIcon className='h-8 w-8'/></NavLink></li>
                     </ul>
                 </Fade>
             </div>

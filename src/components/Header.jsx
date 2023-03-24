@@ -13,7 +13,7 @@ const certchain = new web3.eth.Contract(abi, networks[0]);
 // Button
 import { PrimaryButton_md_fill } from './PrimaryButton';
 
-function HeaderGuess({ setAccount, setIsconnected}) {
+function HeaderGuess({ setAccount, setIsconnected, showPrivacy, setShowPrivacy}) {
 
     const handleConnectWallet = async () => {
         const accounts = await web3.eth.requestAccounts();
@@ -36,7 +36,8 @@ function HeaderGuess({ setAccount, setIsconnected}) {
                         ].map(([text, href]) => (
                             <li key={text} className='flex items-center hover:cursor-pointer hover:text-slate-400 transition'><a href={href}>{text}</a></li>
                         ))}
-                        <li className='hover:cursor-pointer'><PrimaryButton_md_fill text={"Connect wallet"} event={handleConnectWallet} /></li>
+                        
+                        {!showPrivacy ? <li className='hover:cursor-pointer'><PrimaryButton_md_fill text={"Connect wallet"} event={handleConnectWallet} /></li> : <li className='hover:cursor-pointer'><button className="px-10 py-2 text-md bg-slate-700 opacity-40 text-white rounded-full">Connect Wallet</button></li>}
                     </ul>
                 </div>
                 <div className='lg:hidden hover:cursor-pointer flex items-center'>

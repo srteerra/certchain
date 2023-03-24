@@ -3,10 +3,13 @@ import { InputSearch } from "../components/Input.jsx";
 
 //Animated icons
 import Footer from "../components/Footer.jsx";
+import { PrivacyCard } from "../components/Privacy.jsx";
 
-const Home = () => {
+const Home = ({showPrivacy, setShowPrivacy}) => {
     return (
         <div className="h-5/6 w-full transition">
+            <PrivacyCard showPrivacy={showPrivacy} setShowPrivacy={setShowPrivacy} />
+
             <div className="h-4/5 flex text-black justify-center flex-col items-center ">
                 <div className="p-5 w-full md:w-1/2 text-center">
                     <p className="text-4xl md:text-5xl font-bold my-12 w-full lg:w-1/2 mx-auto">Authenticate with Blockchain</p>

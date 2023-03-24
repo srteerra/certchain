@@ -11,11 +11,11 @@ function PrimaryButton_lg_fill({text, event}) {
     )
 }
 
-function PrimaryButton_md_fill({text, event}) {
+function PrimaryButton_md_fill({text, event, disabled}) {
     return (
         <button
             className="px-10 py-2 text-md bg-primary text-white rounded-full hover:opacity-90 transition duration-200 ease-in-out"
-            onClick={event}>{text}
+            onClick={event} disabled={disabled}>{text}
         </button>
     )
 }
